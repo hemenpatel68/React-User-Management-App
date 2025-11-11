@@ -6,27 +6,27 @@ function Login() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  // ✅ Handle Login Function
+  // Handle Login Function
   const handleLogin = (e) => {
     e.preventDefault();
 
     // Try to get saved user from localStorage
     const savedUser = JSON.parse(localStorage.getItem("user"));
 
-    // ✅ Case 1: No user found → redirect to Register page
+    // Case 1: No user found → redirect to Register page
     if (!savedUser) {
       alert("No user found! Please register first.");
       navigate("/register");
       return;
     }
 
-    // ✅ Case 2: Wrong credentials
+    // Case 2: Wrong credentials
     if (savedUser.email !== email || savedUser.password !== password) {
       alert("Invalid credentials. Please try again.");
       return;
     }
 
-    // ✅ Case 3: Success → Redirect to Account page
+    // Case 3: Success → Redirect to Account page
     alert("Login successful!");
     navigate("/account");
   };
@@ -72,7 +72,7 @@ function Login() {
       </form>
 
       <p className="text-center">
-        Don’t have an account? <a href="/register">Register here</a>
+        Don't have an account? <a href="/register">Register here</a>
       </p>
     </div>
   );

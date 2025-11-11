@@ -1,4 +1,4 @@
-/* 🌈 Global Theme */
+/* Global Theme */
 html,
 body {
   height: 100%;
@@ -8,7 +8,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-/* 🧭 Center the card perfectly */
+/* Center the card perfectly */
 .app-wrapper {
   display: flex;
   justify-content: center;
@@ -18,7 +18,7 @@ body {
   padding: 1.5rem;
 }
 
-/* 🧩 Card Layout */
+/* Card Layout */
 .app-card {
   width: 100%;
   max-width: 600px;
@@ -29,7 +29,7 @@ body {
   animation: fadeIn 0.5s ease-in-out;
 }
 
-/* ✨ Page Headings */
+/* Page Headings */
 h2 {
   text-align: center;
   font-weight: 600;
@@ -38,7 +38,7 @@ h2 {
   font-size: 1.4rem;
 }
 
-/* 🧾 Labels */
+/* Labels */
 .form-label {
   margin-bottom: 0.4rem;
   color: #333;
@@ -46,7 +46,7 @@ h2 {
   font-size: 1rem;
 }
 
-/* 🧱 Inputs */
+/* Inputs */
 form input {
   height: 48px;
   border-radius: 10px;
@@ -63,7 +63,7 @@ form input:focus {
   box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
 }
 
-/* 🔘 Buttons */
+/* Buttons */
 .btn {
   border-radius: 10px;
   height: 50px;
@@ -84,7 +84,7 @@ form input:focus {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* 🔗 Links */
+/* Links */
 a {
   text-decoration: none;
   color: #0d6efd;
@@ -95,14 +95,14 @@ a:hover {
   text-decoration: underline;
 }
 
-/* 🧠 Paragraph Text */
+/* Paragraph Text */
 p {
   font-size: 16px;
   color: #333;
   margin-top: 1.3rem;
 }
 
-/* 🧑 Profile Avatar */
+/* Profile Avatar */
 .profile-avatar {
   width: 120px;
   height: 120px;
@@ -112,7 +112,7 @@ p {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* 💫 Animation */
+/* Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -124,7 +124,7 @@ p {
   }
 }
 
-/* 📱 Responsive */
+/* Responsive */
 @media (max-width: 600px) {
   .app-card {
     padding: 2rem 1.5rem;

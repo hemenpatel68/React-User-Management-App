@@ -6,7 +6,7 @@ function Account() {
   const [user, setUser] = useState({ name: "", email: "", password: "" });
   const [isEditing, setIsEditing] = useState(false);
 
-  // ✅ Load user info on mount
+  // Load user info on mount
   useEffect(() => {
     const savedUser = JSON.parse(localStorage.getItem("user"));
     if (!savedUser) {
@@ -17,33 +17,33 @@ function Account() {
     }
   }, [navigate]);
 
-  // ✅ Handle changes
+  // Handle changes
   const handleChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
 
-  // ✅ Save changes
+  // Save changes
   const handleSave = () => {
     localStorage.setItem("user", JSON.stringify(user));
     alert("Account details updated successfully!");
     setIsEditing(false);
   };
 
-  // ✅ Cancel edit
+  // Cancel edit
   const handleCancel = () => {
     const savedUser = JSON.parse(localStorage.getItem("user"));
     setUser(savedUser);
     setIsEditing(false);
   };
 
-  // ✅ Logout user
+  // Logout user
   const handleLogout = () => {
     localStorage.removeItem("user");
     alert("You have been logged out successfully!");
     navigate("/");
   };
 
-  // ✅ Generate avatar from name
+  // Generate avatar from name
   const getAvatarUrl = (name) => {
     if (!name) return "https://ui-avatars.com/api/?name=User&background=0D6EFD&color=fff&size=128";
     const formattedName = name.trim().replace(/\s+/g, "+");
@@ -54,7 +54,7 @@ function Account() {
     <div>
       <h2>Account Details</h2>
 
-      {/* 🧑 Profile Picture */}
+      {/* Profile Picture */}
       <div className="text-center mb-4">
         <img
           src={getAvatarUrl(user.name)}
