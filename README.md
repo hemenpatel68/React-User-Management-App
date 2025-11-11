@@ -24,35 +24,12 @@ cd Chaintech-Assignment
 npm install
 ```
 
-### Run (development)
+### Run
 ```bash
 npm run dev
 ```
 This starts Vite’s dev server. Open the URL it prints (usually `http://localhost:5173`).
 
-### Build (production)
-```bash
-npm run build
-```
-Outputs a production build in the `dist` folder.
-
-### Preview (serve production build locally)
-```bash
-npm run preview
-```
-
-### Lint
-```bash
-npm run lint
-```
-
----
-
-## Scripts
-- **dev**: Start the Vite development server
-- **build**: Create a production build
-- **preview**: Preview the production build locally
-- **lint**: Run ESLint across the project
 
 Defined in `package.json`:
 ```json
@@ -120,7 +97,7 @@ Defined in `package.json`:
 ## Accessibility and UX Notes
 - Keyboard-accessible forms and buttons
 - Descriptive labels and placeholders
-- Basic client-side validation (extend as needed)
+- Basic client-side validation
 
 ---
 
@@ -135,16 +112,6 @@ Defined in `package.json`:
     ```
 - If styles don’t load, confirm Bootstrap is properly imported.
 
----
 
-## Contributing
-1. Fork the repo
-2. Create a feature branch: `git checkout -b feat/your-feature`
-3. Commit changes: `git commit -m "feat: add your feature"`
-4. Push the branch: `git push origin feat/your-feature`
-5. Open a Pull Request
 
----
 
-## License
-This project is for educational/assignment use. Add a license if you plan to distribute.
